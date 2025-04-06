@@ -16,25 +16,106 @@
     />
 
     <!-- Preload CSS -->
-    <link
-      rel="preload"
-      href="output.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript><link rel="stylesheet" href="output.css" /></noscript>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
 
-    <link
-      rel="preload"
-      href="style.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript><link rel="stylesheet" href="style.css" /></noscript>
   </head>
   <body class="">
     <!-- Navbar placeholder -->
-    <div id="navbar-placeholder"></div>
+    <!-- <div id="navbar-placeholder"></div> -->
+     <!-- nav bar -->
+
+<nav class="fixed top-0 left-0  w-full bg-white h-[120px] p-4 flex justify-between items-center z-10">
+  <div class=" text-xl">
+    <img
+      src="pictures/Gepard_Immobilien.avif"
+      alt="Company Logo"
+      class="w-[120px] h-[70px]"
+      width="120"
+      height="70"
+
+    />
+  </div>
+  <button id="menuButton" class="text-3xl focus:outline-none" aria-label="Open menu">☰</button>
+
+</nav>
+
+<!-- Slide Menu -->
+<div
+  id="slideMenu"
+  class="fixed top-0 right-0 w-7/12 h-full bg-[#374C77] shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto z-20 invisible"
+>
+  <div class="flex justify-end items-center p-4">
+    <i id="closeButton" class="fa-solid fa-xmark text-4xl text-white cursor-pointer" role="button" aria-label="Close menu"></i>
+
+  </div>
+  <ul class="p-4 space-y-4 text-white">
+    <li>
+      <a
+        href="index.html"
+        class="block text-lg pb-[8px] border-b-[2px] border-b-gray-200 nav-link"
+        >Home</a
+      >
+    </li>
+    <li>
+      <a
+        href="AKTUELLE.html"
+        class="block text-lg pb-[8px] border-b-[2px] border-b-gray-200 nav-link"
+        >AKTUELLE IMMOBILIENANGEBOTE</a
+      >
+    </li>
+    <li>
+      <a
+        href="MARKTBERICHT.html"
+        class="block text-lg pb-[8px] border-b-[2px] border-b-gray-200 nav-link"
+        >MARKTBERICHT & NEWS</a
+      >
+    </li>
+    <li>
+      <a
+        href="LeistunServicerview.html"
+        class="block text-lg pb-[8px] border-b-[2px] border-b-gray-200 nav-link"
+        >LEISTUNGSÜBERSICHT</a
+      >
+    </li>
+    <li>
+      <a
+        href="Immobilienbewertung.html"
+        class="block text-lg pb-[8px] border-b-[2px] border-b-gray-200 nav-link"
+        >IMMOBILIENBEWERTUNG VOM PROFI</a
+      >
+    </li>
+    <li>
+      <a
+        href="Referenzen.html"
+        class="block text-lg pb-[8px] border-b-[2px] border-b-gray-200 nav-link"
+        >REFERENZEN</a
+      >
+    </li>
+    <li>
+      <a
+        href="Unser.html"
+        class="block text-lg pb-[8px] border-b-[2px] border-b-gray-200 nav-link"
+        >UNSER ANKAUFSPROFIL</a
+      >
+    </li>
+    <li>
+      <a
+        href="Unternehmen.html"
+        class="block text-lg pb-[8px] border-b-[2px] border-b-gray-200 nav-link"
+        >ÜBER UNS</a
+      >
+    </li>
+    <li>
+      <a
+        href="KONTAKTFORMULAR.html"
+        class="block text-lg pb-[8px] border-b-[2px] border-b-gray-200 nav-link"
+        >KONTAKT</a
+      >
+    </li>
+  </ul>
+</div>
+
 
     <section class="relative mt-[120px] h-[400px] md:h-[500px] w-full overflow-hidden">
       <!-- Background Video -->
@@ -160,47 +241,109 @@
       </a>
     </div>
     <!-- --------------------------------------footer------------------------------------------ -->
-    <div id="footer-placeholder"></div>
+    <!-- <div id="footer-placeholder"></div> -->
+      <!-- --------------------------------------footer------------------------------------------ -->
+ <div class="footer bg-gray-900 py-[50px] text-white" style="width: 100%">
+  <footer class="mx-auto max-w-[92%] sm:max-w-[90%] md:max-w-[80%] lg:max-w-[70%]">
+    <div class="flex justify-between gap-[14px] sm:gap-[0px]">
+      <!-- Left Section -->
+      <div class="space-y-4">
+        <h2 class="text-[13px] sm:text-xl font-bold break-words">Gepard Immobilien GmbH</h2>
+        <div class="space-y-1 text-[13px] sm:text-xl">
+          <p>Die Firmenadresse lautet.</p>
+          <p>Frankfurter Straße 99</p>
+          <p>63263 Neu-Isenburg</p>
+        </div>
+        <div class="space-y-1 text-[13px] sm:text-xl">
+          <p class="mt-2">
+            E-Mail:
+            <a href="mailto:info@gepard-Immobilien.de" class="text-blue">
+              info@gepard-Immobilien.de</a
+            >
+          </p>
+          <p>
+            Telefon:
+            <a href="tel:+496921995502" class="text-blue-40">
+              069 21 99 55 02</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="text-left md:text-left space-y-4 sm:space-y-8 flex flex-col items-start">
+        <h2 class="text-[13px] sm:text-xl font-bold break-words">Kontaktieren sie uns gerne</h2>
+        <a href="KONTAKTFORMULAR.html"
+          class="mt-4 px-[20px] sm:px-[40px] py-[8px] bg-white text-gray-900 font-semibold rounded-full shadow-lg hover:bg-gray-200"
+        >
+          Kontakt
+        </a>
+        <div style="background-color: white; display: inline-block; padding:0px;">
+            <img src="pictures/cache_32506082.avif" alt="Image Description" class="w-[110px] md:w-[140px] lg:w-[170px]" style="display: block;  height: 50px;" />
+          </div>
+
+        </div>
+      </div>
+       <!-- Bottom Links -->
+    <div
+    class="mt-6 leading-6 w-[30%] mx-auto flex flex-wrap justify-center md:justify-center space-x-4 text-sm text-white"
+  >
+    <a href="KONTAKTFORMULAR.html" class="hover:cursor-pointer">Kontakt</a>
+    <a href="Impressum.html" class="hover:cursor-pointer">Impressum</a>
+    <a href="Datenschutz.html" class="hover:cursor-pointer">Datenschutz</a>
+    <a href="Haftungsausschluss.html" class="hover:cursor-pointer">Haftungsausschluss</a>
+  </div>
+</footer>
+    </div>
     <!-- Scroll to top will be loaded here -->
-    <div id="scrollToTop-placeholder"></div>
+    <!-- <div id="scrollToTop-placeholder"></div> -->
+      <!-- Fixed Scroll-to-Top Button -->
+
+ <!-- <i
+ id="scrollToTop"
+ class="fa-solid fa-chevron-up  fixed bottom-4 right-4 border-[1px] border-[#283B62] bg-white p-3 rounded-full shadow-lg"
+></i> -->
+<i id="scrollToTop" class="fa-solid fa-chevron-up cursor-pointer fixed bottom-4 right-4 p-4 border-[1px] border-[#283B62] bg-white rounded-full shadow-lg"></i>
+
+
 
     <script>
-      function loadNavbar() {
-        fetch("navbar.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("navbar-placeholder").innerHTML = data;
+      // function loadNavbar() {
+      //   fetch("navbar.html")
+      //     .then((response) => response.text())
+      //     .then((data) => {
+      //       document.getElementById("navbar-placeholder").innerHTML = data;
 
-            // Wait for navbar to load, then initialize its JS
-            const script = document.createElement("script");
-            script.src = "script.js";
-            document.body.appendChild(script);
-          })
-          .catch((error) => console.error("Error loading navbar:", error));
-      }
+      //       // Wait for navbar to load, then initialize its JS
+      //       const script = document.createElement("script");
+      //       script.src = "script.js";
+      //       document.body.appendChild(script);
+      //     })
+      //     .catch((error) => console.error("Error loading navbar:", error));
+      // }
 
-      document.addEventListener("DOMContentLoaded", loadNavbar);
+      // document.addEventListener("DOMContentLoaded", loadNavbar);
 
-      function loadFooter() {
-        fetch("footer.html") // Path to your footer.html file
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("footer-placeholder").innerHTML = data;
-          })
-          .catch((error) => console.error("Error loading footer:", error));
-      }
+      // function loadFooter() {
+      //   fetch("footer.html") // Path to your footer.html file
+      //     .then((response) => response.text())
+      //     .then((data) => {
+      //       document.getElementById("footer-placeholder").innerHTML = data;
+      //     })
+      //     .catch((error) => console.error("Error loading footer:", error));
+      // }
 
-      document.addEventListener("DOMContentLoaded", loadFooter);
-      function loadScrollToTop() {
-        fetch("scrollToTop.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("scrollToTop-placeholder").innerHTML = data;
-          })
-          .catch((error) => console.error("Error loading scrollToTop:", error));
-      }
+      // document.addEventListener("DOMContentLoaded", loadFooter);
+      // function loadScrollToTop() {
+      //   fetch("scrollToTop.html")
+      //     .then((response) => response.text())
+      //     .then((data) => {
+      //       document.getElementById("scrollToTop-placeholder").innerHTML = data;
+      //     })
+      //     .catch((error) => console.error("Error loading scrollToTop:", error));
+      // }
 
-      document.addEventListener("DOMContentLoaded", loadScrollToTop);
+      // document.addEventListener("DOMContentLoaded", loadScrollToTop);
     </script>
     <!-- <script src="script.js"></script> -->
   </body>
